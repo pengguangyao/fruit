@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <title>Document</title>
+    <script src="./js/underscore.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/fruit.js"></script>
+    <script src="./js/offset.js"></script>
+    <script src="./js/scene.js"></script>
+    <script src="./js/knife.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #2b2b2b;
+        }
+        canvas{
+            position: absolute;
+            border: 1px solid black;
+            left: 30%;
+            top: 10%;
+            background: url("./images/background.jpg");
+        }
+    </style>
+</head>
+<body>
+    <canvas width="640" height="480"></canvas>
+    <audio src="./music/menu.mp3"></audio>
+    <audio src="./music/splatter.mp3"></audio>
+    <audio src="./music/start.mp3"></audio>
+    <audio src="./music/throw.mp3"></audio>
+    <audio src="./music/boom.mp3"></audio>
+    <audio src="./music/over.mp3"></audio>
+</body>
+</html>
+<script>
+    var game = new Game();
+</script>
